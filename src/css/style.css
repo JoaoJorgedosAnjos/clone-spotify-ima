@@ -32,18 +32,18 @@
     width: 100%;
     justify-content: center;
     padding: 0px 15px;
-    
+
 }
 
 #navbar .navbar-container {
-    width: 1140px;    
+    width: 1140px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
 }
 
-#navbar .navbar-container ul {
+.navbar .navbar-container ul {
     display: flex;
     font-weight: bold;
 }
@@ -52,7 +52,11 @@
     padding: 0 20px;
 }
 
-#navbar .navbar-container ul li:hover {
+#navbar .navbar-container ul li a {
+    color: white;
+}
+
+#navbar .navbar-container ul li a:hover {
     color: var(--light-green);
     cursor: pointer;
     transition: all 300ms ease;
@@ -94,7 +98,7 @@
     background: black;
     color: white;
     padding: 80px 15px;
-    
+
 }
 
 #footer .footer-content {
@@ -102,31 +106,33 @@
     width: 1140px;
     margin: auto;
     justify-content: space-between;
-    
+
 }
-#footer .footer-content .footer-logo{
+
+#footer .footer-content .footer-logo {
     width: 195px;
 }
 
-#footer .footer-content .footer-menu-container{
+#footer .footer-content .footer-menu-container {
     display: flex;
     width: 585px;
     margin-left: -13rem;
 }
+
 #footer .footer-content .footer-menu {
     width: 195px;
 }
 
 
 #footer .footer-content .footer-menu .footer-menu-item {
-	margin: 20px 0;
-	transition: all 300ms ease;
+    margin: 20px 0;
+    transition: all 300ms ease;
     width: 150px;
 }
 
 #footer .footer-content .footer-menu .footer-menu-item:hover {
-	color: var(--default-green);
-	cursor: pointer;
+    color: var(--default-green);
+    cursor: pointer;
     transition: all 300ms ease;
 }
 
@@ -144,8 +150,8 @@
 }
 
 .socials i:hover {
-	color: var(--default-green);
-	cursor: pointer;
+    color: var(--default-green);
+    cursor: pointer;
     transition: all 300ms ease;
 }
 
@@ -174,13 +180,13 @@
 }
 
 .footer-info .footer-info-items .footer-info-item {
-	margin: 0 10px;
-	transition: all 300ms ease;
+    margin: 0 10px;
+    transition: all 300ms ease;
 }
 
 .footer-info .footer-info-items .footer-info-item:hover {
-	color: var(--default-green);
-	cursor: pointer;
+    color: var(--default-green);
+    cursor: pointer;
     transition: all 300ms ease;
 }
 
@@ -206,4 +212,76 @@
     width: auto;
     display: inline-block;
     margin-left: 10px;
+}
+
+/*Menu Hamburguer */
+
+.header nav ul li a {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+
+}
+
+.navbar nav .menu {
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+
+.navbar nav label {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar .hamburguer {
+    background-color: black;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar .hamburguer:before,
+.navbar .hamburguer:after {
+    background-color: #000;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar .hamburguer:before {
+    top: -10px;
+}
+
+.navbar .hamburguer:after {
+    bottom: -10px;
+}
+
+.navbar input {
+    display: none;
+}
+
+.navbar input:checked~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+.navbar input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.navbar input:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    top: 0;
 }
