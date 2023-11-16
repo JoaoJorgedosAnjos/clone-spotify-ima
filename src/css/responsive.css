@@ -1,0 +1,29 @@
+@media(max-width:1200px) {
+    #navbar .navbar-container {
+        width: 970px;
+    }
+
+    #footer .footer-content {
+        width: 970px;
+
+    }
+
+    #footer .footer-content .footer-menu-container{
+        margin-left: -4rem;
+    }
+}
+
+@media(max-width:1000px) {
+    #navbar .navbar-container {
+        width: 970px;
+    }
+
+    #footer .footer-content {
+        width: 970px;
+
+    }
+
+    #footer .footer-content .footer-menu-container{
+        margin-left: -4rem;
+    }
+}
