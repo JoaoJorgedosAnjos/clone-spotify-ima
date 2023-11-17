@@ -5,7 +5,6 @@
 
     #footer .footer-content {
         width: 970px;
-
     }
 
     #footer .footer-info {
@@ -17,14 +16,11 @@
     }
 }
 
-
-
 @media(max-width:992px) {
 
     #navbar .navbar-container,
     #footer .footer {
         width: 750px;
-
     }
 
     .navbar nav .menu {
@@ -66,7 +62,6 @@
         width: 100%;
         align-items: baseline;
         gap: 50px;
-
     }
 
     #footer .footer-info {
@@ -88,7 +83,6 @@
     #footer .footer-info-items {
         flex-wrap: wrap;
         gap: 20px;
-
     }
 }
 
