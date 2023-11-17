@@ -5,7 +5,8 @@ Este é um projeto guiado oferecido pela Ima Tech com o objetivo de criar um clo
 
 <img src="./src/img/tela-maior.png">
 
-Algumas modificações foram implementadas, como a criação e organização de pastas, além da separação de arquivos .css. 
+Algumas modificações foram implementadas, como a criação e organização de pastas, além da separação de arquivos css. 
+
 <img src="./src/img/src.png">
 
 Outra distinção neste projeto é a abordagem responsiva, garantindo funcionamento em diversos dispositivos e resoluções de tela.
