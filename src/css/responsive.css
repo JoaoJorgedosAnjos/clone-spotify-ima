@@ -8,27 +8,25 @@
 
     }
 
-    #footer .footer-content .footer-menu-container {
-        margin-left: -4rem;
-    }
-}
-
-@media(max-width:1000px) {
-    #navbar .navbar-container {
+    #footer .footer-info {
         width: 970px;
-    }
-
-    #footer .footer-content {
-        width: 970px;
-
     }
 
     #footer .footer-content .footer-menu-container {
         margin-left: -4rem;
     }
 }
+
+
 
 @media(max-width:992px) {
+
+    #navbar .navbar-container,
+    #footer .footer {
+        width: 750px;
+
+    }
+
     .navbar nav .menu {
         display: block;
     }
@@ -37,10 +35,10 @@
         display: none;
     }
 
-    .navbar input:checked~ul{
+    .navbar input:checked~ul {
         display: block;
         margin-top: 16px;
-        background-color: rgba(0, 0, 0 ,0.6);
+        background-color: rgba(0, 0, 0, 0.6);
     }
 
     .navbar nav {
@@ -53,7 +51,7 @@
     .navbar nav ul {
         width: 250px;
         padding: 0px;
-        margin-right:-25px; 
+        margin-right: -25px;
         height: 40vh;
     }
 
@@ -61,5 +59,68 @@
         text-align: center;
         padding: 20px;
         display: block;
+    }
+
+    #footer .footer-content {
+        flex-direction: column;
+        width: 100%;
+        align-items: baseline;
+        gap: 50px;
+
+    }
+
+    #footer .footer-info {
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    #footer .footer-content .footer-menu-container {
+        flex-direction: column;
+        gap: 50px;
+        width: 250px;
+        margin: 0;
+    }
+
+}
+
+@media(max-width:720px) {
+    #footer .footer-info-items {
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+}
+
+@media(max-width:697px) {
+    #showcase .showcase-container h2 {
+        font-size: 4rem;
+    }
+}
+
+@media(max-width:580px) {
+    #showcase .showcase-container h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #showcase .showcase-container p {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media(max-width:460px) {
+    #showcase .showcase-container h2 {
+        font-size: 2rem;
+    }
+
+    #showcase .showcase-container p {
+        font-size: 15px;
+    }
+
+    .btn-primary {
+        padding: 15px 60px;
+        width: 250px;
     }
 }
